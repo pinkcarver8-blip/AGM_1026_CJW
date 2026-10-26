@@ -562,5 +562,83 @@ footer{background:#16293f;color:#b3c2d3;font-size:14px;padding:28px 0;line-heigh
   }
 })();
 </script>
+<!-- Amplitude 분석 -->
+<script>
+(function(){
+  // TODO: Amplitude 프로젝트 API Key를 넣으면 추적이 켜집니다. 비워 두면 외부 스크립트를 불러오지 않습니다.
+  var AMPLITUDE_API_KEY = "7a939529ef56c18bba62bc1fa5c92d70";
+  var SERVER_ZONE = "US"; // 유럽 데이터센터를 쓰는 프로젝트면 "EU"
+
+  var queue = [], live = false;
+  function track(name, props){
+    if(live) amplitude.track(name, props);
+    else if(AMPLITUDE_API_KEY) queue.push([name, props]);
+  }
+  function where(el){
+    var s = el.closest("section,.hero,header,.dock");
+    if(!s) return "page";
+    return s.id || (s.classList.contains("hero") ? "hero" : s.tagName.toLowerCase() === "header" ? "header" : s.classList.contains("dock") ? "dock" : "section");
+  }
+
+  // 1) CTA 클릭 (data-cta가 붙은 모든 버튼) — 스토어 버튼은 별도 이벤트
+  document.addEventListener("click", function(e){
+    var a = e.target.closest("[data-cta]");
+    if(!a) return;
+    var id = a.getAttribute("data-cta");
+    if(id.indexOf("store-") === 0) track("Store Button Clicked", { store: id.replace("store-", "") });
+    else track("CTA Clicked", { cta_id: id, location: where(a), label: a.textContent.trim() });
+  });
+
+  // 2) 구역 노출 (처음 한 번씩)
+  if("IntersectionObserver" in window){
+    var seen = {};
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(en.isIntersecting && !seen[en.target.id]){ seen[en.target.id] = 1; track("Section Viewed", { section: en.target.id }); }
+      });
+    }, { threshold: .35 });
+    ["check","day","perks","start","faq","download"].forEach(function(id){ var el = document.getElementById(id); if(el) io.observe(el); });
+  }
+
+  // 3) 자격 확인 체크
+  var boxes = [].slice.call(document.querySelectorAll("#ck input"));
+  boxes.forEach(function(b){
+    b.addEventListener("change", function(){
+      track("Eligibility Checked", { checked_count: boxes.filter(function(x){ return x.checked; }).length, item: b.closest("label").querySelector("span").firstChild.textContent.trim(), checked: b.checked });
+    });
+  });
+
+  // 4) 혜택 칩 클릭, FAQ 열기
+  document.addEventListener("click", function(e){
+    var c = e.target.closest(".pchips a");
+    if(c) track("Benefit Chip Clicked", { benefit: c.textContent.trim() });
+  });
+  [].slice.call(document.querySelectorAll("details")).forEach(function(d){
+    d.addEventListener("toggle", function(){
+      if(!d.open) return;
+      var sm = d.querySelector("summary"), tg = sm.querySelector(".tag");
+      var q = sm.cloneNode(true), t = q.querySelector(".tag");
+      if(t) t.remove();
+      track("FAQ Opened", { question: q.textContent.replace(/\s+/g, " ").trim(), benefit: tg ? tg.textContent.trim() : "" });
+    });
+  });
+
+  // 5) SDK 로드 (키가 있을 때만)
+  if(!AMPLITUDE_API_KEY) return;
+  var sc = document.createElement("script");
+  sc.src = "https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz";
+  sc.async = true;
+  sc.onload = function(){
+    amplitude.init(AMPLITUDE_API_KEY, {
+      serverZone: SERVER_ZONE,
+      defaultTracking: { pageViews: true, sessions: true, formInteractions: false, fileDownloads: false }
+    });
+    live = true;
+    queue.forEach(function(q){ amplitude.track(q[0], q[1]); });
+    queue = [];
+  };
+  document.head.appendChild(sc);
+})();
+</script>
 </body>
 </html>
