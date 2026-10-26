@@ -1,0 +1,496 @@
+{
+ "fold-cover-280": {
+  "vw": 280,
+  "vh": 653,
+  "docH": 8467,
+  "overflow": [],
+  "small": [],
+  "ctaCount": 9,
+  "ctaPos": [
+   {
+    "id": "header-download",
+    "y": 8,
+    "w": 90,
+    "h": 44
+   },
+   {
+    "id": "hero-download",
+    "y": 431,
+    "w": 244,
+    "h": 52
+   },
+   {
+    "id": "hero-check",
+    "y": 495,
+    "w": 244,
+    "h": 52
+   },
+   {
+    "id": "check-download",
+    "y": 2569,
+    "w": 156,
+    "h": 52
+   },
+   {
+    "id": "perks-download",
+    "y": 5439,
+    "w": 192,
+    "h": 52
+   },
+   {
+    "id": "steps-download",
+    "y": 5909,
+    "w": 156,
+    "h": 44
+   },
+   {
+    "id": "store-ios",
+    "y": 8005,
+    "w": 244,
+    "h": 62
+   },
+   {
+    "id": "store-android",
+    "y": 8081,
+    "w": 244,
+    "h": 62
+   },
+   {
+    "id": "dock-download",
+    "y": 671,
+    "w": 248,
+    "h": 52
+   }
+  ],
+  "tap": [
+   "우리동네 돌봄 히어로:32x44"
+  ],
+  "perkCount": {
+   "hero": "1111",
+   "perks": "1111",
+   "steps": "1000",
+   "faq": "1111",
+   "final": "1111"
+  }
+ },
+ "phone-360": {
+  "vw": 360,
+  "vh": 740,
+  "docH": 7660,
+  "overflow": [],
+  "small": [],
+  "ctaCount": 9,
+  "ctaPos": [
+   {
+    "id": "header-download",
+    "y": 8,
+    "w": 90,
+    "h": 44
+   },
+   {
+    "id": "hero-download",
+    "y": 384,
+    "w": 324,
+    "h": 52
+   },
+   {
+    "id": "hero-check",
+    "y": 448,
+    "w": 324,
+    "h": 52
+   },
+   {
+    "id": "check-download",
+    "y": 2202,
+    "w": 156,
+    "h": 52
+   },
+   {
+    "id": "perks-download",
+    "y": 4937,
+    "w": 272,
+    "h": 52
+   },
+   {
+    "id": "steps-download",
+    "y": 5370,
+    "w": 236,
+    "h": 44
+   },
+   {
+    "id": "store-ios",
+    "y": 7223,
+    "w": 324,
+    "h": 62
+   },
+   {
+    "id": "store-android",
+    "y": 7300,
+    "w": 324,
+    "h": 62
+   },
+   {
+    "id": "dock-download",
+    "y": 758,
+    "w": 328,
+    "h": 52
+   }
+  ],
+  "tap": [],
+  "perkCount": {
+   "hero": "1111",
+   "perks": "1111",
+   "steps": "1000",
+   "faq": "1111",
+   "final": "1111"
+  }
+ },
+ "phone-412": {
+  "vw": 412,
+  "vh": 915,
+  "docH": 7621,
+  "overflow": [],
+  "small": [],
+  "ctaCount": 9,
+  "ctaPos": [
+   {
+    "id": "header-download",
+    "y": 12,
+    "w": 90,
+    "h": 44
+   },
+   {
+    "id": "hero-download",
+    "y": 392,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "hero-check",
+    "y": 458,
+    "w": 193,
+    "h": 54
+   },
+   {
+    "id": "check-download",
+    "y": 2161,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "perks-download",
+    "y": 4967,
+    "w": 324,
+    "h": 54
+   },
+   {
+    "id": "steps-download",
+    "y": 5402,
+    "w": 288,
+    "h": 44
+   },
+   {
+    "id": "store-ios",
+    "y": 7208,
+    "w": 181,
+    "h": 63
+   },
+   {
+    "id": "store-android",
+    "y": 7285,
+    "w": 196,
+    "h": 63
+   },
+   {
+    "id": "dock-download",
+    "y": 934,
+    "w": 380,
+    "h": 54
+   }
+  ],
+  "tap": [],
+  "perkCount": {
+   "hero": "1111",
+   "perks": "1111",
+   "steps": "1000",
+   "faq": "1111",
+   "final": "1111"
+  }
+ },
+ "fold-open-720": {
+  "vw": 720,
+  "vh": 840,
+  "docH": 6140,
+  "overflow": [],
+  "small": [],
+  "ctaCount": 9,
+  "ctaPos": [
+   {
+    "id": "header-download",
+    "y": 12,
+    "w": 90,
+    "h": 44
+   },
+   {
+    "id": "hero-download",
+    "y": 408,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "hero-check",
+    "y": 408,
+    "w": 193,
+    "h": 54
+   },
+   {
+    "id": "check-download",
+    "y": 2252,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "perks-download",
+    "y": 3981,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "steps-download",
+    "y": 4467,
+    "w": 183,
+    "h": 44
+   },
+   {
+    "id": "store-ios",
+    "y": 5829,
+    "w": 181,
+    "h": 63
+   },
+   {
+    "id": "store-android",
+    "y": 5829,
+    "w": 196,
+    "h": 63
+   },
+   {
+    "id": "dock-download",
+    "y": 859,
+    "w": 520,
+    "h": 54
+   }
+  ],
+  "tap": [],
+  "perkCount": {
+   "hero": "1111",
+   "perks": "1111",
+   "steps": "1000",
+   "faq": "1111",
+   "final": "1111"
+  }
+ },
+ "tablet-820": {
+  "vw": 820,
+  "vh": 1180,
+  "docH": 6215,
+  "overflow": [],
+  "small": [],
+  "ctaCount": 9,
+  "ctaPos": [
+   {
+    "id": "header-download",
+    "y": 12,
+    "w": 90,
+    "h": 44
+   },
+   {
+    "id": "hero-download",
+    "y": 427,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "hero-check",
+    "y": 427,
+    "w": 193,
+    "h": 54
+   },
+   {
+    "id": "check-download",
+    "y": 2281,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "perks-download",
+    "y": 4050,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "steps-download",
+    "y": 4546,
+    "w": 216,
+    "h": 44
+   },
+   {
+    "id": "store-ios",
+    "y": 5904,
+    "w": 181,
+    "h": 63
+   },
+   {
+    "id": "store-android",
+    "y": 5904,
+    "w": 196,
+    "h": 63
+   },
+   {
+    "id": "dock-download",
+    "y": 1199,
+    "w": 520,
+    "h": 54
+   }
+  ],
+  "tap": [],
+  "perkCount": {
+   "hero": "1111",
+   "perks": "1111",
+   "steps": "1000",
+   "faq": "1111",
+   "final": "1111"
+  }
+ },
+ "desktop-1440": {
+  "vw": 1440,
+  "vh": 900,
+  "docH": 5650,
+  "overflow": [],
+  "small": [],
+  "ctaCount": 8,
+  "ctaPos": [
+   {
+    "id": "header-download",
+    "y": 12,
+    "w": 90,
+    "h": 44
+   },
+   {
+    "id": "hero-download",
+    "y": 499,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "hero-check",
+    "y": 499,
+    "w": 193,
+    "h": 54
+   },
+   {
+    "id": "check-download",
+    "y": 1412,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "perks-download",
+    "y": 3527,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "steps-download",
+    "y": 4086,
+    "w": 179,
+    "h": 44
+   },
+   {
+    "id": "store-ios",
+    "y": 5397,
+    "w": 181,
+    "h": 63
+   },
+   {
+    "id": "store-android",
+    "y": 5397,
+    "w": 196,
+    "h": 63
+   }
+  ],
+  "tap": [],
+  "perkCount": {
+   "hero": "1111",
+   "perks": "1111",
+   "steps": "1000",
+   "faq": "1111",
+   "final": "1111"
+  }
+ },
+ "wide-1920": {
+  "vw": 1920,
+  "vh": 1080,
+  "docH": 5712,
+  "overflow": [],
+  "small": [],
+  "ctaCount": 8,
+  "ctaPos": [
+   {
+    "id": "header-download",
+    "y": 12,
+    "w": 90,
+    "h": 44
+   },
+   {
+    "id": "hero-download",
+    "y": 506,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "hero-check",
+    "y": 506,
+    "w": 193,
+    "h": 54
+   },
+   {
+    "id": "check-download",
+    "y": 1422,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "perks-download",
+    "y": 3575,
+    "w": 179,
+    "h": 54
+   },
+   {
+    "id": "steps-download",
+    "y": 4135,
+    "w": 203,
+    "h": 44
+   },
+   {
+    "id": "store-ios",
+    "y": 5458,
+    "w": 181,
+    "h": 64
+   },
+   {
+    "id": "store-android",
+    "y": 5458,
+    "w": 196,
+    "h": 64
+   }
+  ],
+  "tap": [],
+  "perkCount": {
+   "hero": "1111",
+   "perks": "1111",
+   "steps": "1000",
+   "faq": "1111",
+   "final": "1111"
+  }
+ }
+}

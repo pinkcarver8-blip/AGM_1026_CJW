@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우리동네 돌봄 히어로 선생님 모집</title>
+<meta name="description" content="0~10세 아이의 등·하원 동행, 기본 돌봄, 아이 주도 놀이. 검증·교육을 거친 우리동네 돌봄 히어로 선생님을 모집합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414; --ink-2:#4a4a4a; --ink-3:#8a8a8a;
+  --bg:#ececec; --paper:#fff; --line:#e4e4e4;
+  --hero:#ffcf3f; --hero-deep:#ff7a2f; --mint:#d9f3e4; --sky:#dcecff; --rose:#ffe0d6;
+  --col:480px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:104px}
+body{font-family:"Pretendard","Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.display{font-family:"Black Han Sans","Malgun Gothic",sans-serif;font-weight:400;letter-spacing:-.01em}
+
+/* 상단 바 */
+.gnb{position:sticky;top:0;z-index:30;background:var(--ink);color:#fff;height:48px;display:flex;align-items:center;justify-content:center}
+.gnb-in{width:100%;max-width:var(--col);padding:0 16px;display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.gnb b{font-size:15px;letter-spacing:-.02em}
+.gnb a.apply-sm{border:1px solid #fff;border-radius:4px;padding:4px 10px;font-size:12px}
+
+.page{max-width:var(--col);margin:0 auto;background:var(--paper);min-height:100vh;padding-bottom:96px}
+
+/* 히어로 */
+.hero{background:var(--hero);padding:28px 20px 0;position:relative;overflow:hidden}
+.hero .eyebrow{font-size:13px;font-weight:700}
+.hero h1{font-size:76px;line-height:.98;margin:14px 0 18px}
+.hero h1 em{font-style:normal;color:var(--hero);background:var(--ink);padding:0 .12em;display:inline-block}
+.hero p.lead{font-size:16px;font-weight:600;max-width:20em}
+.hero .art{display:block;width:100%;height:auto;margin-top:6px}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;padding:16px 20px;background:var(--ink);color:#fff;margin:0 -20px}
+.hero-foot .age{font-size:30px;line-height:1}
+.hero-foot .tag{font-size:13px;text-align:right;color:var(--hero)}
+
+/* 탭 */
+.tabs{position:sticky;top:48px;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.tabs ul{list-style:none;display:flex;gap:8px;overflow-x:auto;padding:12px 16px;scrollbar-width:none}
+.tabs ul::-webkit-scrollbar{display:none}
+.tabs a{display:block;white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.tabs a.on{background:var(--ink);border-color:var(--ink);color:#fff}
+
+section{padding:44px 20px}
+.sec-label{font-size:12px;font-weight:700;color:var(--hero-deep);letter-spacing:.06em}
+h2{font-size:26px;line-height:1.3;margin:6px 0 10px;letter-spacing:-.03em}
+.sec-sub{color:var(--ink-2);font-size:14px;margin-bottom:22px}
+
+/* 활동 카드 */
+.roles{display:grid;gap:12px}
+.role{border-radius:16px;padding:20px;display:flex;gap:16px;align-items:flex-start}
+.role:nth-child(1){background:var(--sky)}.role:nth-child(2){background:var(--mint)}.role:nth-child(3){background:var(--rose)}
+.role svg{flex:none;width:52px;height:52px}
+.role h3{font-size:17px;margin-bottom:4px}
+.role p{font-size:14px;color:var(--ink-2)}
+
+/* 혜택 */
+.benefits{background:var(--ink);color:#fff}
+.benefits h2{color:#fff}.benefits .sec-sub{color:#bbb}
+.bf{list-style:none;display:grid;gap:0;border-top:1px solid #333}
+.bf li{display:grid;grid-template-columns:56px 1fr;gap:6px;padding:20px 0;border-bottom:1px solid #333}
+.bf .n{font-size:30px;color:var(--hero);line-height:1}
+.bf h3{font-size:17px;margin-bottom:3px}
+.bf p{font-size:13.5px;color:#bbb}
+.big{margin-top:24px;background:var(--hero);color:var(--ink);border-radius:16px;padding:22px;text-align:center}
+.big .display{font-size:44px;line-height:1}
+.big span{display:block;font-size:13px;font-weight:700;margin-top:6px}
+
+/* 과정 */
+.steps{list-style:none;position:relative;display:grid;gap:0}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding-bottom:22px;position:relative}
+.steps li:not(:last-child)::before{content:"";position:absolute;left:21px;top:44px;bottom:0;border-left:2px dashed #ccc}
+.steps .dot{width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--hero);display:grid;place-items:center;font-size:18px}
+.steps h3{font-size:16px;margin-top:2px}
+.steps p{font-size:13.5px;color:var(--ink-2)}
+
+/* 지역/시간 */
+.match{background:#f6f6f6}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:13.5px;font-weight:600}
+.note{font-size:12px;color:var(--ink-3)}
+
+/* 추천 */
+.refer{background:var(--mint)}
+.refer-box{background:#fff;border-radius:16px;padding:22px;display:grid;grid-template-columns:1fr 64px;gap:12px;align-items:center}
+.refer-box h3{font-size:17px;margin-bottom:4px}
+.refer-box p{font-size:13.5px;color:var(--ink-2)}
+
+/* 마지막 CTA */
+.final{background:var(--hero);text-align:center;padding:56px 20px}
+.final h2{font-size:34px;line-height:1.2}
+.btn{display:block;background:var(--ink);color:#fff;border-radius:999px;padding:16px;font-weight:700;font-size:16px;margin-top:20px}
+footer{padding:28px 20px;font-size:12px;color:var(--ink-3);background:#fafafa}
+
+/* 하단 고정 알약 */
+.dock{position:fixed;left:0;right:0;bottom:18px;z-index:40;display:flex;justify-content:center;pointer-events:none}
+.dock a{pointer-events:auto;background:var(--ink);color:#fff;border-radius:999px;padding:13px 26px;font-weight:700;font-size:15px;box-shadow:0 6px 20px rgba(0,0,0,.28);display:flex;gap:8px;align-items:center}
+.dock a i{font-style:normal;background:var(--hero);color:var(--ink);border-radius:999px;padding:2px 8px;font-size:11px}
+
+@media (max-width:380px){.hero h1{font-size:62px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="gnb">
+  <div class="gnb-in">
+    <b>우리동네 돌봄 히어로</b>
+    <a class="apply-sm" href="#apply">선생님 신청</a>
+  </div>
+</header>
+
+<main class="page">
+
+  <!-- 히어로 -->
+  <div class="hero">
+    <div class="eyebrow">돌봄 히어로 선생님 모집</div>
+    <h1 class="display">우리동네<br><em>돌봄</em><br>히어로</h1>
+    <p class="lead">등·하원 동행부터 기본 돌봄, 아이가 이끄는 놀이까지. 검증·교육을 마친 선생님이 되어 주세요.</p>
+    <svg class="art" viewBox="0 0 440 210" role="img" aria-label="망토를 두른 선생님과 아이들이 함께 걷는 일러스트">
+      <ellipse cx="220" cy="196" rx="210" ry="10" fill="#e6b52a"/>
+      <!-- 선생님 -->
+      <path d="M150 70 q-40 40 -30 120 h92 q10 -80 -26 -120z" fill="#ff7a2f"/>
+      <circle cx="170" cy="58" r="26" fill="#ffe3c4" stroke="#141414" stroke-width="3"/>
+      <rect x="146" y="86" width="50" height="86" rx="18" fill="#141414"/>
+      <path d="M170 98 l8 14 l-8 -4 l-8 4z" fill="#ffcf3f"/>
+      <!-- 아이 1 -->
+      <circle cx="262" cy="104" r="19" fill="#ffe3c4" stroke="#141414" stroke-width="3"/>
+      <rect x="246" y="124" width="32" height="52" rx="12" fill="#4b8bff"/>
+      <rect x="238" y="130" width="14" height="30" rx="6" fill="#ff7a2f"/>
+      <!-- 아이 2 -->
+      <circle cx="318" cy="118" r="16" fill="#ffe3c4" stroke="#141414" stroke-width="3"/>
+      <rect x="304" y="136" width="28" height="42" rx="11" fill="#2fc47f"/>
+      <!-- 손잡기 -->
+      <path d="M196 120 q36 14 54 8" stroke="#141414" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M278 138 q16 4 28 0" stroke="#141414" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- 별 -->
+      <path d="M380 40 l6 14 l15 2 l-11 10 l3 15 l-13 -8 l-13 8 l3 -15 l-11 -10 l15 -2z" fill="#fff"/>
+      <circle cx="60" cy="50" r="6" fill="#fff"/><circle cx="96" cy="26" r="4" fill="#141414"/>
+    </svg>
+    <div class="hero-foot">
+      <div class="display age">0~10세</div>
+      <div class="tag">검증 · 교육 · 매칭 · 활동</div>
+    </div>
+  </div>
+
+  <!-- 탭 -->
+  <nav class="tabs" aria-label="페이지 메뉴">
+    <ul>
+      <li><a href="#role" class="on">활동 소개</a></li>
+      <li><a href="#benefit">혜택</a></li>
+      <li><a href="#process">활동 과정</a></li>
+      <li><a href="#match">시간·지역</a></li>
+      <li><a href="#refer">추천</a></li>
+      <li><a href="#apply">신청</a></li>
+    </ul>
+  </nav>
+
+  <!-- 활동 소개 -->
+  <section id="role">
+    <div class="sec-label">WHAT YOU DO</div>
+    <h2>히어로 선생님은<br>이런 시간을 함께해요</h2>
+    <p class="sec-sub">0~10세 아이에게 꼭 필요한 순간에, 믿고 맡길 수 있는 어른이 되어 주세요.</p>
+    <div class="roles">
+      <div class="role">
+        <svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="26" fill="#fff"/><path d="M14 38 q4 -18 12 -18 t12 18" stroke="#141414" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="26" cy="14" r="5" fill="#141414"/></svg>
+        <div><h3>등·하원 동행</h3><p>집에서 학교·유치원·학원까지, 안전하게 함께 이동하며 하루의 시작과 끝을 챙겨요.</p></div>
+      </div>
+      <div class="role">
+        <svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="26" fill="#fff"/><path d="M14 28 l12 -10 l12 10 v10 h-24z" fill="none" stroke="#141414" stroke-width="3" stroke-linejoin="round"/><circle cx="26" cy="30" r="3" fill="#141414"/></svg>
+        <div><h3>기본 돌봄</h3><p>간식과 숙제 확인, 안정적인 일상 돌봄으로 보호자가 안심할 수 있게 도와요.</p></div>
+      </div>
+      <div class="role">
+        <svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="26" fill="#fff"/><path d="M26 12 l4 9 l10 1 l-8 7 l3 10 l-9 -6 l-9 6 l3 -10 l-8 -7 l10 -1z" fill="#141414"/></svg>
+        <div><h3>아이 주도 놀이</h3><p>아이가 고르고 이끄는 놀이를 곁에서 지원해요. 1,000가지 놀이법이 든든한 자료가 됩니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 혜택 -->
+  <section id="benefit" class="benefits">
+    <div class="sec-label">BENEFIT</div>
+    <h2>선생님께 드리는<br>다섯 가지 혜택</h2>
+    <p class="sec-sub">수입 기회와 성장, 두 가지를 함께 챙길 수 있어요.</p>
+    <ol class="bf">
+      <li><div class="n display">01</div><div><h3>전문 교육과 돌봄 활동을 통한 수입 기회</h3><p>교육을 수료하고 돌봄 활동을 하며 수입을 만들 수 있어요.</p></div></li>
+      <li><div class="n display">02</div><div><h3>내 시간·지역에 맞는 일자리 매칭</h3><p>가능한 시간과 활동 지역에 맞는 돌봄 일자리를 연결해 드려요.</p></div></li>
+      <li><div class="n display">03</div><div><h3>전문 교육 + 놀이 키트로 역량 강화</h3><p>교육과 놀이 키트로 처음이어도 준비된 상태에서 시작해요.</p></div></li>
+      <li><div class="n display">04</div><div><h3>1,000가지 놀이법으로 아이 주도 놀이 지원</h3><p>매번 무엇을 할지 고민하지 않도록 놀이법을 제공해요.</p></div></li>
+      <li><div class="n display">05</div><div><h3>히어로 커뮤니티와 부모 피드백</h3><p>함께하는 선생님들과 부모님의 피드백으로 계속 성장할 수 있어요.</p></div></li>
+    </ol>
+    <div class="big">
+      <div class="display">1,000</div>
+      <span>가지 놀이법을 선생님께 제공합니다</span>
+    </div>
+  </section>
+
+  <!-- 활동 과정 -->
+  <section id="process">
+    <div class="sec-label">HOW IT WORKS</div>
+    <h2>신청부터 첫 활동까지</h2>
+    <p class="sec-sub">검증과 교육을 마친 선생님만 활동해요. 아이와 보호자 모두를 위한 약속입니다.</p>
+    <ol class="steps">
+      <li><div class="dot display">1</div><div><h3>선생님 신청</h3><p>활동 가능한 지역과 시간대를 알려 주세요.</p></div></li>
+      <li><div class="dot display">2</div><div><h3>검증</h3><p>아이를 맡기는 일인 만큼 검증 절차를 거칩니다.</p></div></li>
+      <li><div class="dot display">3</div><div><h3>돌봄 교육 수료</h3><p>돌봄 역량 교육을 듣고 놀이 키트를 받아요.</p></div></li>
+      <li><div class="dot display">4</div><div><h3>첫 매칭</h3><p>내 지역·시간에 맞는 아이와 연결돼요.</p></div></li>
+      <li><div class="dot display">5</div><div><h3>활동과 성장</h3><p>부모 피드백과 히어로 커뮤니티로 오래 함께해요.</p></div></li>
+    </ol>
+  </section>
+
+  <!-- 시간·지역 -->
+  <section id="match" class="match">
+    <div class="sec-label">MATCHING</div>
+    <h2>내 동네, 내 시간에<br>맞춰 일해요</h2>
+    <p class="sec-sub">돌봄이 필요한 지역과 시간대는 동네마다 달라요. 가능한 때를 알려 주시면 맞는 활동을 안내해 드려요.</p>
+    <div class="chips">
+      <span class="chip">등원 시간대</span>
+      <span class="chip">하원 시간대</span>
+      <span class="chip">방과 후 돌봄</span>
+      <span class="chip">저녁 시간대</span>
+      <span class="chip">우리 동네 우선</span>
+    </div>
+    <p class="note">* 모집 지역과 시간대는 수요에 따라 달라질 수 있어요.</p>
+  </section>
+
+  <!-- 추천 -->
+  <section id="refer" class="refer">
+    <div class="sec-label">HERO REFERRAL</div>
+    <h2>같이 하면 더 든든해요</h2>
+    <p class="sec-sub">이미 활동 중인 선생님의 추천으로도 함께할 수 있어요.</p>
+    <div class="refer-box">
+      <div><h3>히어로 추천 프로그램</h3><p>주변에 돌봄을 잘할 것 같은 분이 있다면 추천해 주세요. 추천 혜택은 신청 시 안내해 드립니다.</p></div>
+      <svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true"><circle cx="22" cy="24" r="10" fill="#ffcf3f" stroke="#141414" stroke-width="3"/><circle cx="44" cy="28" r="9" fill="#ff7a2f" stroke="#141414" stroke-width="3"/><path d="M6 54 q16 -22 32 0M34 56 q10 -16 24 -2" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round"/></svg>
+    </div>
+  </section>
+
+  <!-- 신청 -->
+  <section id="apply" class="final">
+    <div class="sec-label" style="color:var(--ink)">APPLY</div>
+    <h2 class="display">우리동네의<br>히어로가 되어 주세요</h2>
+    <p class="sec-sub" style="color:var(--ink);margin:10px 0 0">교육 수료 후 내 시간·지역에 맞는 활동을 시작해요.</p>
+    <!-- TODO: 실제 신청 폼/링크 주소로 교체 -->
+    <a class="btn" href="#apply">선생님 신청하기</a>
+  </section>
+
+  <footer>
+    우리동네 돌봄 히어로 · 선생님 모집 안내<br>
+    활동 지역, 시간대, 수입 조건은 매칭 시점에 따라 달라질 수 있습니다.
+  </footer>
+</main>
+
+<div class="dock"><a href="#apply"><i>모집중</i>선생님 신청하기</a></div>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.tabs a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){a.classList.remove('on')});
+        var a=map[e.target.id];
+        if(a){a.classList.add('on');a.scrollIntoView({inline:'center',block:'nearest'})}
+      }
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el)});
+})();
+</script>
+</body>
+</html>

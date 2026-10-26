@@ -1,0 +1,453 @@
+{
+ "fold-cover-280": {
+  "vw": 280,
+  "vh": 653,
+  "docH": 8206,
+  "overflow": [],
+  "small": [
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.cond:13.5px",
+   "SPAN.cond:13.5px"
+  ],
+  "ctaCount": 6,
+  "ctaPos": [
+   {
+    "id": "hero-download",
+    "y": 525,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "hero-check",
+    "y": 598,
+    "w": 256,
+    "h": 61
+   },
+   {
+    "id": "check-download",
+    "y": 2502,
+    "w": 172,
+    "h": 90
+   },
+   {
+    "id": "store-ios",
+    "y": 7755,
+    "w": 172,
+    "h": 61
+   },
+   {
+    "id": "store-android",
+    "y": 7829,
+    "w": 184,
+    "h": 61
+   },
+   {
+    "id": "dock-download",
+    "y": 582,
+    "w": 248,
+    "h": 61
+   }
+  ],
+  "tap": [
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28"
+  ],
+  "perkCount": {
+   "첫 활동 지원": 2,
+   "활동 중 문제 대응": 1,
+   "활동 경력 관리": 1,
+   "추천 보상": 2
+  }
+ },
+ "phone-360": {
+  "vw": 360,
+  "vh": 740,
+  "docH": 6810,
+  "overflow": [],
+  "small": [
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.cond:13.5px",
+   "SPAN.cond:13.5px"
+  ],
+  "ctaCount": 6,
+  "ctaPos": [
+   {
+    "id": "hero-download",
+    "y": 446,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "hero-check",
+    "y": 519,
+    "w": 256,
+    "h": 61
+   },
+   {
+    "id": "check-download",
+    "y": 2217,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "store-ios",
+    "y": 6383,
+    "w": 172,
+    "h": 61
+   },
+   {
+    "id": "store-android",
+    "y": 6458,
+    "w": 184,
+    "h": 61
+   },
+   {
+    "id": "dock-download",
+    "y": 669,
+    "w": 328,
+    "h": 61
+   }
+  ],
+  "tap": [
+   "우리동네 돌봄 히어로:210x38",
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28"
+  ],
+  "perkCount": {
+   "첫 활동 지원": 2,
+   "활동 중 문제 대응": 1,
+   "활동 경력 관리": 1,
+   "추천 보상": 2
+  }
+ },
+ "phone-412": {
+  "vw": 412,
+  "vh": 915,
+  "docH": 6411,
+  "overflow": [],
+  "small": [
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.cond:13.5px",
+   "SPAN.cond:13.5px"
+  ],
+  "ctaCount": 6,
+  "ctaPos": [
+   {
+    "id": "hero-download",
+    "y": 446,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "hero-check",
+    "y": 519,
+    "w": 256,
+    "h": 61
+   },
+   {
+    "id": "check-download",
+    "y": 2151,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "store-ios",
+    "y": 6008,
+    "w": 172,
+    "h": 61
+   },
+   {
+    "id": "store-android",
+    "y": 6083,
+    "w": 184,
+    "h": 61
+   },
+   {
+    "id": "dock-download",
+    "y": 844,
+    "w": 380,
+    "h": 61
+   }
+  ],
+  "tap": [
+   "우리동네 돌봄 히어로:210x38",
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28"
+  ],
+  "perkCount": {
+   "첫 활동 지원": 2,
+   "활동 중 문제 대응": 1,
+   "활동 경력 관리": 1,
+   "추천 보상": 2
+  }
+ },
+ "fold-open-720": {
+  "vw": 720,
+  "vh": 840,
+  "docH": 6020,
+  "overflow": [],
+  "small": [
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.cond:13.5px",
+   "SPAN.cond:13.5px"
+  ],
+  "ctaCount": 6,
+  "ctaPos": [
+   {
+    "id": "hero-download",
+    "y": 417,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "hero-check",
+    "y": 417,
+    "w": 256,
+    "h": 61
+   },
+   {
+    "id": "check-download",
+    "y": 2221,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "store-ios",
+    "y": 5717,
+    "w": 172,
+    "h": 61
+   },
+   {
+    "id": "store-android",
+    "y": 5717,
+    "w": 184,
+    "h": 61
+   },
+   {
+    "id": "dock-download",
+    "y": 769,
+    "w": 688,
+    "h": 61
+   }
+  ],
+  "tap": [
+   "우리동네 돌봄 히어로:210x38",
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28"
+  ],
+  "perkCount": {
+   "첫 활동 지원": 2,
+   "활동 중 문제 대응": 1,
+   "활동 경력 관리": 1,
+   "추천 보상": 2
+  }
+ },
+ "tablet-820": {
+  "vw": 820,
+  "vh": 1180,
+  "docH": 6141,
+  "overflow": [],
+  "small": [
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.cond:13.5px",
+   "SPAN.cond:13.5px"
+  ],
+  "ctaCount": 6,
+  "ctaPos": [
+   {
+    "id": "hero-download",
+    "y": 437,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "hero-check",
+    "y": 437,
+    "w": 256,
+    "h": 61
+   },
+   {
+    "id": "check-download",
+    "y": 2333,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "store-ios",
+    "y": 5838,
+    "w": 172,
+    "h": 61
+   },
+   {
+    "id": "store-android",
+    "y": 5838,
+    "w": 184,
+    "h": 61
+   },
+   {
+    "id": "dock-download",
+    "y": 1109,
+    "w": 788,
+    "h": 61
+   }
+  ],
+  "tap": [
+   "우리동네 돌봄 히어로:210x38",
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28",
+   "INPUT:28x28"
+  ],
+  "perkCount": {
+   "첫 활동 지원": 2,
+   "활동 중 문제 대응": 1,
+   "활동 경력 관리": 1,
+   "추천 보상": 2
+  }
+ },
+ "desktop-1440": {
+  "vw": 1440,
+  "vh": 900,
+  "docH": 4601,
+  "overflow": [],
+  "small": [
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.cond:13.5px",
+   "SPAN.cond:13.5px"
+  ],
+  "ctaCount": 5,
+  "ctaPos": [
+   {
+    "id": "hero-download",
+    "y": 507,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "hero-check",
+    "y": 507,
+    "w": 256,
+    "h": 61
+   },
+   {
+    "id": "check-download",
+    "y": 1239,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "store-ios",
+    "y": 4352,
+    "w": 172,
+    "h": 61
+   },
+   {
+    "id": "store-android",
+    "y": 4352,
+    "w": 184,
+    "h": 61
+   }
+  ],
+  "tap": [
+   "우리동네 돌봄 히어로:210x38",
+   "지원 자격:61x26",
+   "하는 일:47x26",
+   "혜택:29x26",
+   "시작 방법:61x26",
+   "궁금한 점:61x26"
+  ],
+  "perkCount": {
+   "첫 활동 지원": 2,
+   "활동 중 문제 대응": 1,
+   "활동 경력 관리": 1,
+   "추천 보상": 2
+  }
+ },
+ "wide-1920": {
+  "vw": 1920,
+  "vh": 1080,
+  "docH": 4601,
+  "overflow": [],
+  "small": [
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.:13.5px",
+   "SPAN.cond:13.5px",
+   "SPAN.cond:13.5px"
+  ],
+  "ctaCount": 5,
+  "ctaPos": [
+   {
+    "id": "hero-download",
+    "y": 507,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "hero-check",
+    "y": 507,
+    "w": 256,
+    "h": 61
+   },
+   {
+    "id": "check-download",
+    "y": 1239,
+    "w": 175,
+    "h": 61
+   },
+   {
+    "id": "store-ios",
+    "y": 4352,
+    "w": 172,
+    "h": 61
+   },
+   {
+    "id": "store-android",
+    "y": 4352,
+    "w": 184,
+    "h": 61
+   }
+  ],
+  "tap": [
+   "우리동네 돌봄 히어로:210x38",
+   "지원 자격:61x26",
+   "하는 일:47x26",
+   "혜택:29x26",
+   "시작 방법:61x26",
+   "궁금한 점:61x26"
+  ],
+  "perkCount": {
+   "첫 활동 지원": 2,
+   "활동 중 문제 대응": 1,
+   "활동 경력 관리": 1,
+   "추천 보상": 2
+  }
+ }
+}
