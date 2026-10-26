@@ -580,14 +580,40 @@ footer{background:#16293f;color:#b3c2d3;font-size:14px;padding:28px 0;line-heigh
     return s.id || (s.classList.contains("hero") ? "hero" : s.tagName.toLowerCase() === "header" ? "header" : s.classList.contains("dock") ? "dock" : "section");
   }
 
-  // 1) CTA 클릭 (data-cta가 붙은 모든 버튼) — 스토어 버튼은 별도 이벤트
+  // 1) CTA 노출·클릭 (data-cta가 붙은 모든 버튼). 두 이벤트는 같은 속성(cta_id, location, label)을 가진다.
+  function ctaProps(a){
+    var id = a.getAttribute("data-cta");
+    var p = { cta_id: id, location: where(a), label: a.textContent.replace(/\s+/g, " ").trim() };
+    if(id.indexOf("store-") === 0) p.store = id.replace("store-", "");
+    return p;
+  }
   document.addEventListener("click", function(e){
     var a = e.target.closest("[data-cta]");
-    if(!a) return;
-    var id = a.getAttribute("data-cta");
-    if(id.indexOf("store-") === 0) track("Store Button Clicked", { store: id.replace("store-", "") });
-    else track("CTA Clicked", { cta_id: id, location: where(a), label: a.textContent.trim() });
+    if(a) track("CTA Clicked", ctaProps(a));
   });
+
+  // 노출: 버튼이 50% 이상 화면에 0.5초 이상 보이면, 한 번의 방문에서 버튼당 1회
+  if("IntersectionObserver" in window){
+    var shown = {}, timers = {};
+    var cio = new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        var el = en.target, id = el.getAttribute("data-cta");
+        if(shown[id]) return;
+        if(en.isIntersecting){
+          timers[id] = setTimeout(function(){
+            if(shown[id]) return;
+            shown[id] = 1;
+            track("CTA Viewed", ctaProps(el));
+            cio.unobserve(el);
+          }, 500);
+        } else if(timers[id]){
+          clearTimeout(timers[id]);
+          timers[id] = 0;
+        }
+      });
+    }, { threshold: .5 });
+    [].slice.call(document.querySelectorAll("[data-cta]")).forEach(function(el){ cio.observe(el); });
+  }
 
   // 2) 구역 노출 (처음 한 번씩)
   if("IntersectionObserver" in window){
